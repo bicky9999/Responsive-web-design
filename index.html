@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Analysis Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container"></div>
+    <h1 id="title">Dream Analysis Survey</h1>
+    <p id="description">Interpret your Dreams</p>
+    <form>
+        <label for="name">Name <input type="text" id="name" placeholder="Enter your name" required/></label>
+        <label for="email">Email <input type="email" id="email" placeholder="Enter your Email" required/></label>
+        <label for="number">Age <input type="number" id="number" placeholder="Age" min="18" max="60" required/></label>
+        
+        <label for="dropdown">What kind of dreams do you see often?<select><option value="0">Select</option>
+        <option value="1">Normal Dreams</option>
+        <option value="2">Lucid Dreams</option>
+        <option value="3">Nightmares</option>
+        <option value="4">Recurring Dreams</option>
+        </select></label>
+        
+        <p>How often do you remember your dreams?</p>
+        <label for="radio"><input type="radio" name="radio" class="inline">Every night</label>
+        <label for="radio"><input type="radio" name="radio" class="inline">A few times a week</label>
+        <label for="radio"><input type="radio" name="radio" class="inline">Occasionally</label>
+        </label>
+
+            
+        
+        <p>What common themes appear in your dreams? (Select all that apply)</p>
+        <label for="falling">
+            <input type="checkbox" id="falling" class="inline" value="falling"> Falling
+        </label>
+        <label for="flying">
+            <input type="checkbox" id="flying" class="inline" value="flying"> Flying
+        </label><label for="being chased">
+            <input type="checkbox" id="being chase" class="inline" value="being chase"> Being chase
+        </label><label for="being lost">
+            <input type="checkbox" id="being lost" class="inline" value="being lost"> Being lost
+        </label><label for="school/exam stress">
+            <input type="checkbox" id="school/exam stress" class="inline" value="school stress"> School/Exam stress
+        </label><label for="death or dying">
+            <input type="checkbox" id="death or dying" class="inline" value="dying"> Death or dying
+        </label><label for="traveling">
+            <input type="checkbox" id="traveling" class="inline" value="traveling"> Traveling
+        </label><label for="super natural beings">
+            <input type="checkbox" id="super natural beings" class="inline" value="super"> Super natural beings
+        </label>
+
+        <label for="describe" id="desc">Describe your most recent dream in detail: <textarea id="describe" row="3" cols="30"></textarea></label>
+        <button id="submit" type="submit">Submit</button>
+    </form>
+    </div>
+    
+</body>
+</html>
