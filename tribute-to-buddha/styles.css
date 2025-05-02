@@ -8,20 +8,22 @@
 #title, #sub-title{
     margin: 0 auto;
     text-align: center;
-    padding: 1rem;
     margin-top: 1.2rem;
 }
 
 #image{
     display: block;
     margin: 0 auto;
-    max-width: 100%;
+    width: 300px;
     height: auto;
+    max-width: 600px;
+    max-height: 600px;
     margin-top: 1.6rem;
 }
 
 #img-caption, #tribute-info {
     text-align: center;
+    margin-top: 1.2rem;
 
 }
 label, #quote{
