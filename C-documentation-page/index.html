@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C-documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav id="navbar">
+        <header id="navheader">C Language Documentation</header>
+        <ul>
+            <li><a href="#introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#get_started" class="nav-link"> Get Started</a></li>
+            <li><a href="#syntax" class="nav-link">Syntax</a></li>
+            <li><a href="#output" class="nav-link">Output</a></li>
+            <li><a href="#comments" class="nav-link">Comments</a></li>
+            <li><a href="#variables" class="nav-link">Variables</a></li>
+            <li><a href="#more_eg" class="nav-link">more examples</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <p>C is a general-purpose programming language created by Dennis Ritchie at the Bell Laboratories in 1972.
+                It is a very popular language, despite being old. The main reason for its popularity is because it is a
+                fundamental language in the field of computer science. C is strongly associated with UNIX, as it was
+                developed to write the UNIX operating system. There are many reasons to learn C in today' world. some of
+                the reasons are:</p>
+            <ul>
+                <li>It is one of the most popular programming languages in the world</li>
+                <li>If you know C, you will have no problem learning other popular programming languages such as Java,
+                    Python, C++, C#, etc, as the syntax is similar </li>
+                <li>C is very fast, compared to other programming languages, like Java and Python</li>
+                <li>C is very versatile; it can be used in both applications and technologies</li>
+            </ul>
+        </section>
+        <section class="main-section" id="get_started">
+            <header>Get Started</header>
+            <p>This tutorial will teach you the basics of C. When you are finished with this tutorial, you will be able
+                to write C programs and create real-life examples. It is not necessary to have any prior programming
+                experience. To start using C, you need two things: </p>
+            <ul>
+                <li>A text editor, like Notepad, to write C code</li>
+                <li>A compiler, like GCC, to translate the C code into a language that the computer will understand</li>
+            </ul>
+        </section>
+        <section class="main-section" id="syntax">
+            <header>Syntax</header>
+            <p>let's break down a example code of C to understand syntax:</p>
+            <pre>
+            <code>#include <stdio.h>
+
+                int main() {
+                  printf("Hello World!");
+                  return 0;
+            }</code>
+            </pre>
+            <ol>
+                <li>#include <stdio.h> is a header file library that lets us work with input and output functions, such
+                        as printf() (used in line 4). Header files add functionality to C programs.</li>
+                <li>Line 2: A blank line. C ignores white space. But we use it to make the code more readable.</li>
+                <li>Another thing that always appear in a C program is main(). This is called a function. Any code
+                    inside its curly brackets {} will be executed.</li>
+                <li>printf() is a function used to output/print text to the screen. In our example, it will output
+                    "Hello World!".</li>
+                <li>return 0 ends the main() function.</li>
+                <li>Do not forget to add the closing curly bracket } to actually end the main function.</li>
+            </ol>
+        </section>
+        <section class="main-section" id="output"><header>Output</header>
+            <p>To output values or print text in C, you can use the printf() function:</p>
+            <pre>
+            <code>#include <stdio.h>
+
+                int main() {
+                  printf("Hello World!");
+                  return 0;
+                }</code>
+                </pre>
+            <p>When you are working with text, it must be wrapped inside double quotations marks "".
+
+                If you forget the double quotes, an error occurs.</p>
+        </section>
+        <section class="main-section " id="Comments"><header>Comments</header>
+            <p>Comments can be used to explain code, and to make it more readable. It can also be used to prevent
+                execution when testing alternative code. Comments can be singled-lined or multi-lined.</p>
+            <p>Single-line comments start with two forward slashes (//). Any text between // and the end of the line is ignored by the compiler (will not be executed).</p>
+            <p>Multi-line comments start with /* and ends with */. Any text between /* and */ will be ignored by the compiler.</p>
+        </section>
+        <section class="main-section" id="variables"><header>Variables</header>
+            <p>Variables are containers for storing data values, like numbers and characters. In C, there are different types of variables (defined with different keywords).</p>
+            <p>To create a variable, specify the type and assign it a value: <code>type variableName = value;</code> Where type is one of C types (such as int), and variableName is the name of the variable (such as x or myName). The equal sign is used to assign a value to the variable.</p>
+        </section>
+        <section class="main-section" id="more_eg">
+            <header>More code examples</header>
+            <pre><code>
+                int i = 0;
+
+                while (i < 5) {
+                    printf("%d\n", i);
+                    i++;
+                }
+            </code></pre>
+            <pre><code>
+                int i = 0;
+
+                do {
+                    printf("%d\n", i);
+                    i++;
+                }
+                while (i < 5);
+            </code></pre>
+            <pre><code>
+                int i;
+
+                    for (i = 0; i < 5; i++) {
+                    printf("%d\n", i);
+                }
+            </code></pre>
+        </section>
+        <footer>
+            <p>If you want more information visit <a href="https://www.w3schools.com/" target="_blank">w3schools</a></p>
+        </footer>
+    </main>
+    
+</body>
+
+</html>
