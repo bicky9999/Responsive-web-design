@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(212, 212, 212);
+}
+.navbar{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+img{
+    width: 30%;
+    height: 100%;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    margin: 2px;
+}
+h2,p{
+    text-align: center;
+
+}
+input{
+    display: block;
+    margin: 0 auto;
+}
+header{
+    text-align: center;
+    border-bottom: 1px solid ;
+    margin-bottom: 40px;
+}
+.ins{
+    border: 1px solid;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.ins p{
+    margin: 10px;
+}
+header,.price{
+    font-weight: bold;
+}
+article{
+    margin: 20px;
+}
+#email{
+    width: 300px;
+    height: 22px;
+    padding: 20px;
+    border: none;
+    margin-top: 20px;
+}
+
+footer{
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+#select{
+    width: 100px;
+    height: 30px;
+    background-color: yellow;
+    border: none;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+iframe{
+    display: block;
+    margin: 0 auto;
+}
+#get-started{
+    margin-top: 20px;
+    background-color: yellow;
+    border: none;
+    padding: 10px;
+}
+@media  only screen and (max-width:600px){
+    .navbar{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        background-color: rgb(223, 222, 222);
+        padding: 20px;
+    }
+    img{
+        width: 60%;
+    }
+    section{
+        margin-top: 200px;
+    }
+}
